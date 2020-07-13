@@ -57,9 +57,6 @@ int MaxPlus::otimes(const int a, const int b)
 MaxPlus::Matrix_t* MaxPlus::oplus(Matrix_t* result, Matrix_t* mat0, Matrix_t* mat1)
 {
     int max_val;
-    // int result_vals[mat0->rows * mat0->cols];
-    //Matrix_t* result = new Matrix_t(A->rows, A->cols, result_vals);
-
     for (unsigned int i = 0; i < mat0->rows; i++)
     {
         for (unsigned int j = 0; j < mat0->cols; j++)
@@ -76,9 +73,6 @@ MaxPlus::Matrix_t* MaxPlus::otimes(Matrix_t* result, Matrix_t* mat0, Matrix_t* m
 {   
     int val;
     int sum;
-    // int result_vals[A->rows * B->cols];
-    //Matrix_t* result = new Matrix_t(A->rows, B->cols, result_vals);
-
     for (unsigned int k = 0; k < mat1->cols; k++)
     {   
         for (unsigned int j = 0; j < mat0->cols; j++)

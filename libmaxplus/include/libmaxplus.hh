@@ -22,18 +22,27 @@ namespace MaxPlus
     const int e = 0;
 
 
-    // Equivalent to the max operation
+    /**
+     * @brief Equivalent to the max operation
+     **/
     int oplus(const int a, const int b);
 
 
-    // Equivalent to regular addition
+    /**
+     * @brief Equivalent to regular addition
+     **/
     int otimes(const int a, const int b);
 
 
-    // Matrix_t oplus
+    /**
+     * @brief Applied element wise (symmetrically) so result(i,j) = mat0(i,j) + mat1(i,j)
+     **/
     Matrix_t* oplus(Matrix_t* result, Matrix_t* mat0, Matrix_t* mat1);
 
 
-    // Matrix_t otimes
+    /**
+     * @brief Equivalent to regular matrix multiplication but with addition and multiplication 
+     *        replaced with oplus and otimes respectively.
+     **/
     Matrix_t* otimes(Matrix_t* result, Matrix_t* mat0, Matrix_t* mat1);
 };
