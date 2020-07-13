@@ -3,7 +3,7 @@ Also known as a [max tropical semiring](https://en.wikipedia.org/wiki/Tropical_s
 when working with timetabling (e.g. railway timetables). This library supports all basic oplus and 
 otimes operations on integer literals and integer matrices.
 
-# How to Use
+# Installation
 The project is built with [bazel](https://bazel.build) and what follows are the steps to include 
 this library in another bazel project.
 1. Add the following to the ```WORKSPACE.bazel``` file 
