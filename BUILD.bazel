@@ -1,0 +1,17 @@
+package(default_visibility = ["//visibility:public"])
+
+
+cc_library(
+    name = "libmaxplus",
+    srcs = glob(["libmaxplus/src/*.cc", "libmaxplus/include/*.hh"]),
+    hdrs = ["libmaxplus/include/libmaxplus.hh"],
+    includes = ["libmaxplus/include"],
+)
+
+
+cc_test(
+    name = "libmaxplus_test_all",
+    size = "small",
+    srcs = ["libmaxplus/test/test_all.cc"],
+    deps = [":libmaxplus"],
+)

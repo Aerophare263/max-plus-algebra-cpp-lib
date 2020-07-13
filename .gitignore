@@ -1,0 +1,6 @@
+# Visual Studio (Code) files
+/.vscode
+/.vs
+
+# Ignore all bazel-* symlinks.
+/bazel-*
